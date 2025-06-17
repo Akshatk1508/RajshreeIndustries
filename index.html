@@ -6,6 +6,96 @@
     <title>Rajshree Industries - Premium Pulses & Food Grains</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .timeline-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            padding: 40px 0 20px 0;
+            background: #fff8dc;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(255, 215, 0, 0.08);
+            overflow-x: auto;
+        }
+
+        .timeline-step {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 120px;
+            max-width: 140px;
+            padding: 16px 8px 0 8px;
+            background: #fff;
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .timeline-step:hover {
+            transform: translateY(-8px) scale(1.05);
+            border-color: #FFA500;
+            z-index: 2;
+        }
+
+        .step-icon {
+            font-size: 2.2rem;
+            color: #FFD700;
+            margin-bottom: 8px;
+        }
+
+        .step-label {
+            font-size: 1rem;
+            color: #333;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .step-tooltip {
+            display: none;
+            position: absolute;
+            bottom: -48px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff8dc;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .timeline-step:hover .step-tooltip {
+            display: block;
+            animation: fadeIn 0.2s;
+        }
+
+        @media (max-width: 900px) {
+            .timeline-container {
+                gap: 18px;
+                padding: 24px 0 10px 0;
+            }
+            .timeline-step {
+                min-width: 90px;
+                max-width: 110px;
+                padding: 10px 4px 0 4px;
+            }
+            .step-icon {
+                font-size: 1.5rem;
+            }
+            .step-label {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -148,42 +238,42 @@
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-tint"></i></span>
                 <span class="step-label">Water Mixing</span>
-              </div>
+                    </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-wind"></i></span>
                 <span class="step-label">Drying (Post-Mixing)</span>
-              </div>
+                </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-leaf"></i></span>
                 <span class="step-label">Husk Removing</span>
-              </div>
+                    </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-wind"></i></span>
                 <span class="step-label">Air & Dust Cleaning</span>
-              </div>
+                </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-stream"></i></span>
                 <span class="step-label">Sorting</span>
-              </div>
+                    </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-brush"></i></span>
                 <span class="step-label">Polishing</span>
-              </div>
+                </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-check-circle"></i></span>
                 <span class="step-label">Quality Check</span>
-              </div>
+                    </div>
               <span class="timeline-arrow"><i class="fas fa-arrow-right"></i></span>
               <div class="timeline-step">
                 <span class="step-icon"><i class="fas fa-box-open"></i></span>
                 <span class="step-label">Packaging</span>
-              </div>
+                </div>
             </div>
         </div>
     </section>
